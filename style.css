@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Inktrap';
+    src: url('Area_Inktrap_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+body{
+    color: #fff;
+    font-family: 'Inktrap', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    background-color: #000000;
+    margin: 0;
+}
+
+.content{
+    position: relative;
+    max-width: 87.48%;
+    overflow: hidden;
+    display: block;
+}
+
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: -15px;
+    z-index: 1; /* Контент будет поверх видео */
+}
+
+.video{
+    position: absolute;
+    z-index: -1;
+    
+}
+
+.text-string{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.text-string-video-window{
+    flex-grow: 1;
+    border-radius: 10px;
+    background-color: black;
+}
